@@ -1,0 +1,52 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="Theme.ActionBarTheme" parent="Theme.Sherlock.Light">
+        <item name="actionBarStyle">@style/Widget.MyTheme.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Widget.MyTheme.ActionBar</item>
+        <item name="searchAutoCompleteTextView">@style/SearchViewStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
+        <item name="actionOverflowButtonStyle">@style/customOverflowButtonStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/customOverflowButtonStyle</item>
+        <item name="searchViewCloseIcon">@android:drawable/ic_menu_search</item>
+        <item name="searchViewSearchIcon">@android:drawable/ic_menu_search</item>
+        <item name="circularProgressBarStyle">@style/CircularProgressBar</item>
+    </style>
+    
+    <style name="Widget.MyTheme.ActionBar" parent="Widget.Sherlock.ActionBar">
+        <item name="android:background">#333333</item>
+        <item name="background">#333333</item>
+        <item name="android:titleTextStyle">@style/ActionBarText</item>
+        <item name="titleTextStyle">@style/ActionBarText</item>
+    </style>
+
+    <style name="customOverflowButtonStyle" parent="Widget.Sherlock.ActionButton.Overflow">
+        <item name="android:src">@drawable/abs__ic_menu_moreoverflow_holo_dark</item>
+    </style>
+
+    <style name="ActionBarText" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.Sherlock.Light.SearchAutoCompleteTextView">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>
