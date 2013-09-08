@@ -1,11 +1,14 @@
-apply plugin: 'android-library'
+apply plugin: 'android'
 
 dependencies {
     compile fileTree(dir: 'libs', include: '*.jar')
+    compile project(':actionbarsherlock')
+    compile project(':PullToRefreshListFragment')
+    compile project(':CircularProgressBarLibrary')
 }
 
 android {
-    compileSdkVersion 14
+    compileSdkVersion 18
     buildToolsVersion "18.0.1"
 
     sourceSets {
