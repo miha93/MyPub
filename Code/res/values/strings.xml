@@ -3,6 +3,6 @@
 
     <string name="app_name">MyPub</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="thanks_for_your_vote">Thanks For Your Vote\nTop 10 Voter\'s get free drink on the bar.</string>
 
 </resources>

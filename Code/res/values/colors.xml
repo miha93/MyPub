@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="score_bar_red">#FF0000</color>
+    <color name="score_bar_blue">#00FF00</color>
+    <color name="score_bar_yellow">#0000FF</color>
+</resources>
