@@ -6,17 +6,23 @@ public final class Place {
 	
 	private Drawable mIcon;
 	private String mName;
+	private String mAddress;
+	private int mId;
+	private boolean mVoteInProgress;
 	
-	public Place(String name, Drawable icon) {
-		mName = name;
-		mIcon = icon;
+	public Place() {
+		mName = "";
+		mIcon = null;
+		mAddress = "";
+		mId = 0;
+		mVoteInProgress = false;
 	}
 
 	public Drawable getIcon() {
 		return mIcon;
 	}
 
-	public void setmIcon(Drawable icon) {
+	public void setIcon(Drawable icon) {
 		this.mIcon = icon;
 	}
 
@@ -24,8 +30,32 @@ public final class Place {
 		return mName;
 	}
 
-	public void setmName(String name) {
+	public void setName(String name) {
 		this.mName = name;
+	}
+
+	public String getAddress() {
+		return mAddress;
+	}
+
+	public void setAddress(String mAddress) {
+		this.mAddress = mAddress;
+	}
+
+	public int getId() {
+		return mId;
+	}
+
+	public void setId(int mId) {
+		this.mId = mId;
+	}
+
+	public boolean isVoteInProgress() {
+		return mVoteInProgress;
+	}
+
+	public void setVoteInProgress(boolean mVoteInProgress) {
+		this.mVoteInProgress = mVoteInProgress;
 	}
 	
 	

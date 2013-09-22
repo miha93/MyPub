@@ -11,6 +11,7 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.widget.SearchView;
 import com.teamdev.mypub.R;
+import com.teamdev.mypub.async.AsyncGetPubs;
 import com.teamdev.mypub.fragments.PlacesFragment;
 import com.teamdev.mypub.interfaces.MainActivityListner;
 
@@ -30,7 +31,6 @@ public class MainActivity extends SherlockFragmentActivity implements
 		mPlaceFragment.setListner(this);
 		getSupportFragmentManager().beginTransaction()
 				.replace(R.id.main_fragment_container, mPlaceFragment).commit();
-
 		initActionBar();
 	}
 
